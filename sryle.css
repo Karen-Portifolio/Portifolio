@@ -1,8 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
 :root {
-  --azul-bebe: #cceeff;
+  --azul-bebe: #d5f0ff;
   --azul-claro: #99ddff;
+  --azul-destaque: #5fb0e8;
   --branco: #ffffff;
   --cinza: #333;
 }
@@ -16,6 +17,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   background-color: var(--azul-bebe);
+  background-image: radial-gradient(circle at top left, #eaf8ff 0%, var(--azul-bebe) 100%);
   color: var(--cinza);
   padding: 20px;
 }
@@ -36,17 +38,17 @@ header {
   border-radius: 50%;
   border: 4px solid var(--azul-claro);
   margin-bottom: 10px;
-  box-shadow: 0 0 10px var(--azul-claro);
+  box-shadow: 0 0 12px var(--azul-destaque);
 }
 
 h1 {
-  color: #0e4f66;
+  color: var(--azul-destaque);
   font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
 h2 {
-  color: #1e5679;
+  color: var(--azul-claro);
   margin: 30px 0 15px;
   font-size: 1.4rem;
   border-bottom: 2px dashed var(--azul-claro);
@@ -71,12 +73,13 @@ p {
   border-radius: 12px;
   padding: 15px;
   width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
 
 .card:hover {
-  transform: scale(1.04);
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
@@ -97,13 +100,13 @@ p {
   max-width: 400px;
   margin-top: 10px;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(14, 79, 102, 0.3);
+  box-shadow: 0 0 15px rgba(0, 100, 150, 0.3);
 }
 
 footer {
   margin-top: 40px;
   font-size: 0.85em;
-  color: #555;
+  color: #444;
 }
 
 /* Responsivo */
