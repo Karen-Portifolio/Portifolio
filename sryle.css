@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
 
 :root {
-  --azul-bebe: #cbe9f5;
-  --azul-destaque: #84c3e8;
-  --rosa-claro: #fce4ec;
+  --azul-bebe: #cceeff;
+  --azul-claro: #99ddff;
   --branco: #ffffff;
-  --cinza: #555;
+  --cinza: #333;
 }
 
 * {
@@ -28,29 +27,29 @@ body {
 }
 
 header {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .avatar {
-  width: 120px;
-  height: 120px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  border: 4px solid var(--azul-destaque);
-  margin-bottom: 15px;
-  box-shadow: 0 0 10px var(--azul-destaque);
+  border: 4px solid var(--azul-claro);
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px var(--azul-claro);
 }
 
 h1 {
-  color: var(--azul-destaque);
-  font-size: 1.6rem;
+  color: #0e4f66;
+  font-size: 1.8rem;
   margin-bottom: 10px;
 }
 
 h2 {
-  color: var(--azul-destaque);
-  margin: 30px 0 20px;
+  color: #1e5679;
+  margin: 30px 0 15px;
   font-size: 1.4rem;
-  border-bottom: 2px dashed var(--rosa-claro);
+  border-bottom: 2px dashed var(--azul-claro);
   display: inline-block;
   padding-bottom: 4px;
 }
@@ -71,30 +70,43 @@ p {
   background-color: var(--branco);
   border-radius: 12px;
   padding: 15px;
-  width: 230px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: scale(1.04);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 10px;
+}
+
+.surpresa {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 2px solid var(--azul-claro);
+}
+
+.foto-juntos {
+  width: 70%;
+  max-width: 400px;
+  margin-top: 10px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(14, 79, 102, 0.3);
 }
 
 footer {
   margin-top: 40px;
   font-size: 0.85em;
-  color: #333;
+  color: #555;
 }
 
-/* Responsivo para celular */
+/* Responsivo */
 @media (max-width: 500px) {
   .card {
     width: 100%;
@@ -110,5 +122,9 @@ footer {
 
   p {
     font-size: 0.95rem;
+  }
+
+  .foto-juntos {
+    width: 90%;
   }
 }
